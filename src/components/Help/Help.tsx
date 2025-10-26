@@ -376,7 +376,7 @@ const HelpCenterPage = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-2">No results found</h3>
                 <p className="text-white/70 mb-6">
-                  We couldn't find any articles matching "{searchQuery}"
+                  {`We couldn&apos;t find any articles matching "${searchQuery}"`}
                 </p>
                 <button
                   onClick={() => setSearchQuery("")}

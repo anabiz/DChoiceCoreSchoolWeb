@@ -39,7 +39,7 @@ const IlluminationBackground = () => {
               linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
               linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)
             `,
-            backgroundSize: '50px 50px'
+            backgroundSize: "50px 50px"
           }}
         />
       </div>
@@ -100,7 +100,7 @@ const AboutPage = () => {
     {
       icon: Globe,
       title: "Global Impact",
-      description: "We're committed to making quality tech education accessible worldwide.",
+      description: "We&apos;re committed to making quality tech education accessible worldwide.",
       color: "from-orange-500 to-red-600"
     }
   ];
@@ -169,7 +169,7 @@ const AboutPage = () => {
               </span>
             </h1>
             <p className="text-xl text-white/70 leading-relaxed mb-8">
-              At CodeMaster, we're on a mission to bridge the gap between ambition and expertise. 
+              At CodeMaster, we&apos;re on a mission to bridge the gap between ambition and expertise. 
               We empower aspiring technologists with the skills, knowledge, and confidence to thrive 
               in the rapidly evolving digital landscape.
             </p>
@@ -227,12 +227,12 @@ const AboutPage = () => {
                   methodologies.
                 </p>
                 <p>
-                  Our founders—seasoned tech professionals from companies like Google, Amazon, and Microsoft—
+                  Our founders&mdash;seasoned tech professionals from companies like Google, Amazon, and Microsoft&mdash;
                   came together with a shared vision: to create learning experiences that mirror real-world 
                   development environments and prepare students for immediate impact in their careers.
                 </p>
                 <p>
-                  Today, we've helped thousands of students transition into tech roles, with many landing 
+                  Today, we&apos;ve helped thousands of students transition into tech roles, with many landing 
                   positions at top companies within months of completing our programs.
                 </p>
               </div>

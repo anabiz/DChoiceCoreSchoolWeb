@@ -80,7 +80,7 @@ const PollingComponent = ({ paymentReference, setHasPaid }: { paymentReference: 
 
         if(paymentReference){
           const result = await CompleteCheckout(paymentReference);
-          
+
           if (result == true) {
             setHasPaid(true);
             setIsSuccessOpen(true);
@@ -128,7 +128,7 @@ const PollingComponent = ({ paymentReference, setHasPaid }: { paymentReference: 
         modalObserverRef.current.disconnect();
       }
     };
-  }, [paymentReference]);
+  }, [paymentReference, startPolling]);
 
   return (  
     <div>  

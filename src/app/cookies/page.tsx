@@ -2,44 +2,44 @@
 
 import { motion } from "framer-motion";
 import { Cookie, Settings, Shield, Info } from "lucide-react";
-import { IlluminationBackground } from "../page";
-
+import { IlluminationBackground } from "@/components/Common/IlluminationBackground";
 const CookiePolicyPage = () => {
   const cookieTypes = [
     {
       icon: Shield,
       name: "Essential Cookies",
-      purpose: "Required for basic site functionality",
+      purpose: "Required for basic site functionality.",
       duration: "Session",
-      examples: "Authentication, security, session management"
+      examples: "Authentication, security, session management.",
     },
     {
       icon: Settings,
       name: "Preference Cookies",
-      purpose: "Remember your settings and preferences",
+      purpose: "Remember your settings and preferences.",
       duration: "1 year",
-      examples: "Language preferences, theme settings"
+      examples: "Language preferences, theme settings.",
     },
     {
       icon: Cookie,
       name: "Analytics Cookies",
-      purpose: "Help us improve our platform",
+      purpose: "Help us improve our platform.",
       duration: "2 years",
-      examples: "Google Analytics, user behavior tracking"
+      examples: "Google Analytics, user behavior tracking.",
     },
     {
       icon: Info,
       name: "Marketing Cookies",
-      purpose: "Deliver relevant advertisements",
+      purpose: "Deliver relevant advertisements.",
       duration: "1 year",
-      examples: "Facebook Pixel, conversion tracking"
-    }
+      examples: "Facebook Pixel, conversion tracking.",
+    },
   ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
       <IlluminationBackground />
-      
+
+      {/* Navbar */}
       <nav className="relative z-50 border-b border-white/10 backdrop-blur-md">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
@@ -53,6 +53,7 @@ const CookiePolicyPage = () => {
         </div>
       </nav>
 
+      {/* Header */}
       <section className="py-16 border-b border-white/10">
         <div className="container mx-auto px-6">
           <motion.div
@@ -70,15 +71,17 @@ const CookiePolicyPage = () => {
               </span>
             </h1>
             <p className="text-xl text-white/70">
-              How we use cookies to enhance your experience
+              How we use cookies to enhance your experience.
             </p>
           </motion.div>
         </div>
       </section>
 
+      {/* Cookie Information */}
       <section className="py-16">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
+            {/* What Are Cookies */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -88,12 +91,13 @@ const CookiePolicyPage = () => {
             >
               <h2 className="text-2xl font-bold text-white mb-4">What Are Cookies?</h2>
               <p className="text-white/70 leading-relaxed">
-                Cookies are small text files that are stored on your device when you visit our website. 
-                They help us provide you with a better experience by remembering your preferences and 
+                Cookies are small text files that are stored on your device when you visit our website.
+                They help us provide you with a better experience by remembering your preferences and
                 understanding how you use our platform.
               </p>
             </motion.div>
 
+            {/* Types of Cookies */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -137,6 +141,7 @@ const CookiePolicyPage = () => {
               </div>
             </motion.div>
 
+            {/* Managing Cookies */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -146,18 +151,23 @@ const CookiePolicyPage = () => {
             >
               <h2 className="text-2xl font-bold text-white mb-4">Managing Cookies</h2>
               <p className="text-white/70 mb-4">
-                You can control and/or delete cookies as you wish. You can delete all cookies that are 
-                already on your computer and set most browsers to prevent them from being placed.
+                You can control and delete cookies as you wish. You can remove all cookies stored on your
+                computer and configure most browsers to prevent them from being saved.
               </p>
               <div className="text-white/70 space-y-2">
-                <div>• Browser settings: Check your browser's help section</div>
-                <div>• Opt-out tools: Available for analytics and advertising cookies</div>
-                <div>• Essential cookies: Cannot be disabled as they are required for site functionality</div>
+                <div>&bull; Browser settings: Check your browser&apos;s help section.</div>
+                <div>&bull; Opt-out tools: Available for analytics and advertising cookies.</div>
+                <div>&bull; Essential cookies: Cannot be disabled as they are required for site functionality.</div>
               </div>
             </motion.div>
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="border-t border-white/10 py-8 text-center text-white/50 text-sm">
+        <p>© {new Date().getFullYear()} CodeMaster. All rights reserved.</p>
+      </footer>
     </div>
   );
 };

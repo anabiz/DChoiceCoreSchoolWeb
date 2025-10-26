@@ -1199,7 +1199,7 @@ const SeminarDashboard = () => {
             </div>
 
             <div className="bg-cyan-500/10 backdrop-blur-md rounded-2xl border border-cyan-500/20 p-6">
-              <h3 className="text-2xl font-semibold text-white mb-4">What's Next?</h3>
+              <h3 className="text-2xl font-semibold text-white mb-4">What&apos;s Next?</h3>
               <div className="space-y-3 text-white/70 text-left max-w-2xl mx-auto">
                 {/* <p>✅ <strong>Check your email</strong> at {userData.email} for seminar access details</p> */}
                 <p>✅ <strong>Join the WhatsApp group</strong> for updates and networking</p>
@@ -1358,7 +1358,7 @@ const SeminarDashboard = () => {
                 viewport={{ once: true }}
               >
                 <h2 className="text-3xl font-bold text-white mb-8">
-                  Here's What Makes This Seminar Different
+                  Here&apos;s What Makes This Seminar Different
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {benefits.map((benefit, index) => {
@@ -1390,7 +1390,7 @@ const SeminarDashboard = () => {
                 className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 p-8"
               >
                 <h2 className="text-3xl font-bold text-white mb-6">
-                  Here's Exactly What You'll Get
+                  Here&apos;s Exactly What You&apos;ll Get
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {whatYouGet.map((item, index) => (
@@ -1442,7 +1442,7 @@ const SeminarDashboard = () => {
                           <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
                         ))}
                       </div>
-                      <p className="text-white/80 text-sm mb-4 italic">"{testimonial.comment}"</p>
+                      <p className="text-white/80 text-sm mb-4 italic">{`"${testimonial.comment}"`}</p>
                       <div className="text-cyan-400 font-semibold mb-1">{testimonial.income}</div>
                       <div className="text-white/60 text-sm">
                         <strong>{testimonial.name}</strong> - {testimonial.role}
@@ -1461,11 +1461,11 @@ const SeminarDashboard = () => {
                 className="bg-gradient-to-r from-red-500/20 to-orange-500/20 backdrop-blur-md rounded-2xl border border-red-500/30 p-8 text-center"
               >
                 <h3 className="text-2xl font-bold text-white mb-4">
-                  ⚠️ Don't Let This Opportunity Pass You By!
+                  ⚠️ Don&apos;t Let This Opportunity Pass You By!
                 </h3>
                 <p className="text-white/70 text-lg mb-4">
-                  Every day you wait is another day you're missing out on high-paying opportunities. 
-                  The tech industry won't wait for you to decide. Take action NOW.
+                  Every day you wait is another day you&apos;re missing out on high-paying opportunities. 
+                  The tech industry won&apos;t wait for you to decide. Take action NOW.
                 </p>
                 <div className="flex justify-center">
                   <motion.button
@@ -1503,7 +1503,7 @@ const SeminarDashboard = () => {
                   </div>
                 </div>
                 <p className="text-white/70 text-sm">
-                  With 8+ years in the industry, I've helped a lot of Nigerians launch successful tech careers. 
+                  With 8+ years in the industry, I&apos;ve helped a lot of Nigerians launch successful tech careers. 
                   {/* My students now work at companies like Flutterwave, Paystack, and Andela. */}
                 </p>
               </div>
@@ -1530,8 +1530,8 @@ const SeminarDashboard = () => {
                   <h3 className="text-lg font-semibold text-white">Risk-Free Investment</h3>
                 </div>
                 <p className="text-white/70 text-sm">
-                  If you attend the first 30 minutes and don't find immediate value, 
-                  we'll refund your payment immediately. No questions asked.
+                  If you attend the first 30 minutes and don&apos;t find immediate value, 
+                  we&apos;ll refund your payment immediately. No questions asked.
                 </p>
               </div>
             </motion.div>
@@ -1653,7 +1653,7 @@ const PaymentButton = ({
             <span className="font-semibold">30-Minute Money-Back Guarantee</span>
           </div>
           <p className="text-white/70 text-sm">
-            If you don't find value in the first 30 minutes, we'll refund your payment immediately.
+            If you don&apos;t find value in the first 30 minutes, we&apos;ll refund your payment immediately.
           </p>
         </div>
 

@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { 
-  Mail, 
-  Phone, 
-  MapPin, 
+import {
+  Mail,
+  Phone,
+  MapPin,
   Send,
   Clock,
   MessageCircle,
@@ -28,19 +28,19 @@ const IlluminationBackground = () => {
                 rgba(255, 119, 198, 0.2), transparent 40%),
               radial-gradient(300px circle at 70% 30%, 
                 rgba(120, 219, 255, 0.2), transparent 40%)
-            `,
+            `
           }}
         />
-        
+
         {/* Classic Grid Pattern */}
-        <div 
+        <div
           className="absolute inset-0 opacity-20"
           style={{
             backgroundImage: `
               linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
               linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)
             `,
-            backgroundSize: '50px 50px'
+            backgroundSize: "50px 50px"
           }}
         />
       </div>
@@ -53,16 +53,16 @@ const IlluminationBackground = () => {
             className="absolute w-1 h-1 bg-cyan-400 rounded-full opacity-20"
             initial={{
               x: Math.random() * 400,
-              y: Math.random() * 400,
+              y: Math.random() * 400
             }}
             animate={{
               y: [0, -20, 0],
-              opacity: [0.1, 0.3, 0.1],
+              opacity: [0.1, 0.3, 0.1]
             }}
             transition={{
               duration: 4 + Math.random() * 2,
               repeat: Infinity,
-              delay: Math.random() * 2,
+              delay: Math.random() * 2
             }}
           />
         ))}
@@ -80,7 +80,9 @@ const ContactPage = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
@@ -90,16 +92,11 @@ const ContactPage = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
+
     setTimeout(() => {
       setIsSubmitting(false);
-      // Here you would typically:
-      // 1. Send data to your backend
-      // 2. Show success message
-      // 3. Reset form
       setFormData({ name: "", email: "", subject: "", message: "" });
-      alert("Message sent successfully! We'll get back to you within 24 hours.");
+      alert("Message sent successfully! We&apos;ll get back to you within 24 hours.");
     }, 2000);
   };
 
@@ -141,26 +138,30 @@ const ContactPage = () => {
   const faqs = [
     {
       question: "How long does it take to hear back after applying?",
-      answer: "We typically respond to all applications within 24-48 hours during business days."
+      answer:
+        "We typically respond to all applications within 24-48 hours during business days."
     },
     {
       question: "Do you offer payment plans?",
-      answer: "Yes! We offer flexible payment plans for all our programs. Contact us to learn more."
+      answer:
+        "Yes! We offer flexible payment plans for all our programs. Contact us to learn more."
     },
     {
-      question: "Can I get a refund if I'm not satisfied?",
-      answer: "We offer a 30-day money-back guarantee for all our programs. No questions asked."
+      question: "Can I get a refund if I&apos;m not satisfied?",
+      answer:
+        "We offer a 30-day money-back guarantee for all our programs. No questions asked."
     },
     {
       question: "Do you provide career support?",
-      answer: "Absolutely! We offer comprehensive career support including resume reviews, interview prep, and job placement assistance."
+      answer:
+        "Absolutely! We offer comprehensive career support including resume reviews, interview prep, and job placement assistance."
     }
   ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
       <IlluminationBackground />
-      
+
       {/* Navigation */}
       <nav className="relative z-50 border-b border-white/10 backdrop-blur-md">
         <div className="container mx-auto px-6 py-4">
@@ -190,8 +191,8 @@ const ContactPage = () => {
               </span>
             </h1>
             <p className="text-xl text-white/70 leading-relaxed mb-8">
-              Have questions about our programs? Ready to start your tech journey? 
-              We're here to help you every step of the way.
+              Have questions about our programs? Ready to start your tech
+              journey? We&apos;re here to help you every step of the way.
             </p>
           </motion.div>
         </div>
@@ -214,11 +215,17 @@ const ContactPage = () => {
                   whileHover={{ y: -5, transition: { duration: 0.2 } }}
                   className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 p-6 text-center hover:border-cyan-400/30 transition-all duration-300 group"
                 >
-                  <div className={`w-12 h-12 bg-gradient-to-r ${method.color} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                  <div
+                    className={`w-12 h-12 bg-gradient-to-r ${method.color} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}
+                  >
                     <Icon className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-lg font-semibold text-white mb-2">{method.title}</h3>
-                  <p className="text-white/60 text-sm mb-3">{method.description}</p>
+                  <h3 className="text-lg font-semibold text-white mb-2">
+                    {method.title}
+                  </h3>
+                  <p className="text-white/60 text-sm mb-3">
+                    {method.description}
+                  </p>
                   <p className="text-cyan-400 font-medium">{method.value}</p>
                 </motion.a>
               );
@@ -239,8 +246,10 @@ const ContactPage = () => {
               viewport={{ once: true }}
               className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 p-8"
             >
-              <h2 className="text-2xl font-bold text-white mb-6">Send us a Message</h2>
-              
+              <h2 className="text-2xl font-bold text-white mb-6">
+                Send us a Message
+              </h2>
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
@@ -325,7 +334,7 @@ const ContactPage = () => {
               </form>
             </motion.div>
 
-            {/* Contact Info & FAQs */}
+            {/* Right side info (office hours, support, FAQs) */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -337,7 +346,9 @@ const ContactPage = () => {
               <div className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 p-6">
                 <div className="flex items-center space-x-3 mb-4">
                   <Clock className="w-6 h-6 text-cyan-400" />
-                  <h3 className="text-xl font-semibold text-white">Office Hours</h3>
+                  <h3 className="text-xl font-semibold text-white">
+                    Office Hours
+                  </h3>
                 </div>
                 <div className="space-y-2 text-white/70">
                   <div className="flex justify-between">
@@ -359,10 +370,13 @@ const ContactPage = () => {
               <div className="bg-cyan-500/10 backdrop-blur-md rounded-2xl border border-cyan-500/20 p-6">
                 <div className="flex items-center space-x-3 mb-4">
                   <MessageCircle className="w-6 h-6 text-cyan-400" />
-                  <h3 className="text-xl font-semibold text-white">Quick Support</h3>
+                  <h3 className="text-xl font-semibold text-white">
+                    Quick Support
+                  </h3>
                 </div>
                 <p className="text-white/70 mb-4">
-                  For urgent inquiries, our support team is available via live chat during business hours.
+                  For urgent inquiries, our support team is available via live
+                  chat during business hours.
                 </p>
                 <button className="w-full bg-cyan-500/20 hover:bg-cyan-500/30 border border-cyan-500/30 text-cyan-300 py-3 rounded-xl font-medium transition-all duration-300">
                   Start Live Chat
@@ -373,10 +387,13 @@ const ContactPage = () => {
               <div className="bg-purple-500/10 backdrop-blur-md rounded-2xl border border-purple-500/20 p-6">
                 <div className="flex items-center space-x-3 mb-4">
                   <Calendar className="w-6 h-6 text-purple-400" />
-                  <h3 className="text-xl font-semibold text-white">Schedule a Call</h3>
+                  <h3 className="text-xl font-semibold text-white">
+                    Schedule a Call
+                  </h3>
                 </div>
                 <p className="text-white/70 mb-4">
-                  Prefer to speak with an advisor? Schedule a personalized consultation call.
+                  Prefer to speak with an advisor? Schedule a personalized
+                  consultation call.
                 </p>
                 <button className="w-full bg-purple-500/20 hover:bg-purple-500/30 border border-purple-500/30 text-purple-300 py-3 rounded-xl font-medium transition-all duration-300">
                   Book Consultation
@@ -385,11 +402,18 @@ const ContactPage = () => {
 
               {/* FAQ Preview */}
               <div className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 p-6">
-                <h3 className="text-xl font-semibold text-white mb-4">Common Questions</h3>
+                <h3 className="text-xl font-semibold text-white mb-4">
+                  Common Questions
+                </h3>
                 <div className="space-y-4">
                   {faqs.slice(0, 2).map((faq, index) => (
-                    <div key={index} className="border-b border-white/10 pb-4 last:border-b-0 last:pb-0">
-                      <h4 className="font-medium text-white mb-2">{faq.question}</h4>
+                    <div
+                      key={index}
+                      className="border-b border-white/10 pb-4 last:border-b-0 last:pb-0"
+                    >
+                      <h4 className="font-medium text-white mb-2">
+                        {faq.question}
+                      </h4>
                       <p className="text-white/60 text-sm">{faq.answer}</p>
                     </div>
                   ))}
@@ -416,16 +440,25 @@ const ContactPage = () => {
             <div className="aspect-video bg-gradient-to-br from-cyan-500/20 to-blue-600/20 flex items-center justify-center">
               <div className="text-center">
                 <MapPin className="w-16 h-16 text-cyan-400 mx-auto mb-4" />
-                <h3 className="text-2xl font-bold text-white mb-2">San Francisco Office</h3>
-                <p className="text-white/70">123 Tech Street, San Francisco, CA 94105</p>
-                <button className="mt-4 text-cyan-400 hover:text-cyan-300 transition-colors duration-300">
-                  Get Directions →
+                <h3 className="text-2xl font-bold text-white mb-2">
+                  San Francisco Office
+                </h3>
+                <p className="text-white/70">
+                  123 Tech Street, San Francisco, CA 94105
+                </p>
+                <button className="mt-4 text-cyan-400 hover:text-cyan-300 transition-colors duration-300 font-medium text-sm">
+                  View on Google Maps →
                 </button>
               </div>
             </div>
           </motion.div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="border-t border-white/10 py-8 text-center text-white/50 text-sm">
+        <p>© {new Date().getFullYear()} CodeMaster. All rights reserved.</p>
+      </footer>
     </div>
   );
 };

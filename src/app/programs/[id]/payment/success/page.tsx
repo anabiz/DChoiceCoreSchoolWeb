@@ -108,7 +108,7 @@ const PaymentSuccessPage = () => {
     {
       icon: Mail,
       title: "Check Your Email",
-      description: "We've sent a welcome package with program details and access instructions",
+      description: "We&apos;ve sent a welcome package with program details and access instructions",
       action: "Check your inbox",
       color: "text-cyan-400"
     },
@@ -129,7 +129,7 @@ const PaymentSuccessPage = () => {
     {
       icon: Calendar,
       title: "Orientation Session",
-      description: "Live orientation on February 15, 2024 - don't miss it!",
+      description: "Live orientation on February 15, 2024 - don&apos;t miss it!",
       action: "Add to Calendar",
       color: "text-green-400"
     },
@@ -203,7 +203,7 @@ const PaymentSuccessPage = () => {
             
             <p className="text-xl text-white/70 mb-6 max-w-2xl mx-auto">
               Your enrollment in <strong className="text-cyan-300">{program.title}</strong> is confirmed. 
-              We're excited to have you join our learning community.
+              We&apos;re excited to have you join our learning community.
             </p>
 
             {/* Order Details */}
@@ -228,7 +228,7 @@ const PaymentSuccessPage = () => {
           >
             <h2 className="text-3xl font-bold text-center mb-12">
               <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                Here's What to Do Next
+                Here&apos;s What to Do Next
               </span>
             </h2>
 
@@ -322,8 +322,8 @@ const PaymentSuccessPage = () => {
               <div className="bg-green-500/10 backdrop-blur-md rounded-2xl border border-green-500/20 p-6">
                 <h3 className="text-xl font-semibold text-white mb-4">Success Guarantee</h3>
                 <p className="text-white/70 text-sm mb-4">
-                  Remember, you're protected by our 30-day money-back guarantee. 
-                  If you're not satisfied, we'll refund your payment.
+                  Remember, you&apos;re protected by our 30-day money-back guarantee. 
+                  If you&apos;re not satisfied, we&apos;ll refund your payment.
                 </p>
                 <div className="flex items-center space-x-2 text-green-400">
                   <CheckCircle className="w-5 h-5" />

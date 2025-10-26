@@ -92,7 +92,7 @@ const programData = {
   id: 3,
   title: "Cloud Computing & DevOps",
   description: "Master modern cloud infrastructure and DevOps practices with hands-on experience",
-  longDescription: "This comprehensive course covers everything you need to become a proficient Cloud and DevOps engineer. You'll learn to design, deploy, and maintain scalable cloud infrastructure while implementing industry-standard DevOps practices that are essential in today's tech landscape.",
+  longDescription: "This comprehensive course covers everything you need to become a proficient Cloud and DevOps engineer. You&apos;ll learn to design, deploy, and maintain scalable cloud infrastructure while implementing industry-standard DevOps practices that are essential in today&apos;s tech landscape.",
   duration: "16 weeks",
   level: "Intermediate",
   category: "Cloud & Infrastructure",
@@ -550,7 +550,7 @@ const ProgramDetailPage = () => {
 
                   {/* What You'll Learn */}
                   <div>
-                    <h3 className="text-2xl font-bold text-white mb-6">What You'll Learn</h3>
+                    <h3 className="text-2xl font-bold text-white mb-6">What You&apos;ll Learn</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       {program.features.map((feature, index) => (
                         <motion.div

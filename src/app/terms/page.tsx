@@ -1,8 +1,9 @@
 "use client";
 
+import { IlluminationBackground } from "@/components/Common/IlluminationBackground";
 import { motion } from "framer-motion";
 import { FileText, BookOpen, CreditCard, AlertCircle } from "lucide-react";
-import { IlluminationBackground } from "../page";
+
 
 const TermsOfServicePage = () => {
   const sections = [

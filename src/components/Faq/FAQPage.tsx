@@ -3,8 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, HelpCircle, BookOpen, CreditCard, Users, Settings, Mail } from "lucide-react";
-import { IlluminationBackground } from "@/app/page";
-
+import { IlluminationBackground } from "../Common/IlluminationBackground";
 const FAQPage = () => {
   const [openCategory, setOpenCategory] = useState("general");
   const [openItems, setOpenItems] = useState<Set<number>>(new Set([0]));
@@ -52,7 +51,7 @@ const FAQPage = () => {
         },
         {
           question: "Can I download course materials?",
-          answer: "Yes, most course materials including videos, PDFs, and code examples are available for download. This allows you to learn even when you're offline or have limited internet connectivity."
+          answer: "Yes, most course materials including videos, PDFs, and code examples are available for download. This allows you to learn even when you&apos;re offline or have limited internet connectivity."
         }
       ]
     },
@@ -63,7 +62,7 @@ const FAQPage = () => {
       questions: [
         {
           question: "What payment methods do you accept?",
-          answer: "We accept all major payment methods through Paystack, including bank transfers, debit/credit cards, and USSD. We've optimized our payment process for Nigerian users to ensure smooth and secure transactions."
+          answer: "We accept all major payment methods through Paystack, including bank transfers, debit/credit cards, and USSD. We&apos;ve optimized our payment process for Nigerian users to ensure smooth and secure transactions."
         },
         {
           question: "Do you offer payment plans?",
@@ -86,7 +85,7 @@ const FAQPage = () => {
       questions: [
         {
           question: "What are the technical requirements?",
-          answer: "You need a computer with internet access and a modern web browser (Chrome, Firefox, or Edge). Most courses require a computer rather than just a phone, as you'll be doing practical coding exercises. We recommend at least 4GB RAM and a stable internet connection."
+          answer: "You need a computer with internet access and a modern web browser (Chrome, Firefox, or Edge). Most courses require a computer rather than just a phone, as you&apos;ll be doing practical coding exercises. We recommend at least 4GB RAM and a stable internet connection."
         },
         {
           question: "Can I access courses on mobile?",
@@ -300,7 +299,7 @@ const FAQPage = () => {
                     Still Have Questions?
                   </h3>
                   <p className="text-white/70 mb-6 max-w-2xl mx-auto">
-                    Can't find the answer you're looking for? Our support team is here to help you with any questions about our courses, payments, or technical issues.
+                    Can&apos;t find the answer you&apos;re looking for? Our support team is here to help you with any questions about our courses, payments, or technical issues.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <a

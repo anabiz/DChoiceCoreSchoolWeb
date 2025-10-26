@@ -340,7 +340,7 @@ const PaymentPage = () => {
 
               {/* Features Included */}
               <div className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 p-6">
-                <h3 className="text-lg font-semibold text-white mb-4">What's Included</h3>
+                <h3 className="text-lg font-semibold text-white mb-4">What&apos;s Included</h3>
                 <div className="space-y-3">
                   {[
                     "Full program access",
@@ -365,8 +365,8 @@ const PaymentPage = () => {
                   <h3 className="text-lg font-semibold text-white">30-Day Money-Back Guarantee</h3>
                 </div>
                 <p className="text-white/70 text-sm">
-                  If you're not satisfied with the program within the first 30 days, 
-                  we'll refund your payment in full. No questions asked.
+                  If you&apos;re not satisfied with the program within the first 30 days, 
+                  we&apos;ll refund your payment in full. No questions asked.
                 </p>
               </div>
 

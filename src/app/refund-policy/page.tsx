@@ -1,8 +1,8 @@
 "use client";
 
+import { IlluminationBackground } from "@/components/Common/IlluminationBackground";
 import { motion } from "framer-motion";
 import { RefreshCw, Clock, CheckCircle, XCircle } from "lucide-react";
-import { IlluminationBackground } from "../page";
 
 const RefundPolicyPage = () => {
   const refundScenarios = [
@@ -107,7 +107,7 @@ const RefundPolicyPage = () => {
             >
               <h2 className="text-2xl font-bold text-white mb-4">Our Refund Policy</h2>
               <p className="text-white/70 leading-relaxed mb-4">
-                We want you to be completely satisfied with your learning experience. If you're not happy 
+                We want you to be completely satisfied with your learning experience. If you&apos;re not happy 
                 with your purchase, we offer a 30-day money-back guarantee for most of our programs.
               </p>
               <div className="bg-orange-500/10 border border-orange-500/20 rounded-xl p-4">
