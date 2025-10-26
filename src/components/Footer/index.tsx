@@ -95,7 +95,7 @@ const Footer = () => {
                   <span className="text-white font-bold text-lg">CM</span>
                 </div>
                 <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                  CodeMaster
+                  TechCareer
                 </span>
               </div>
               
@@ -112,7 +112,7 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center space-x-3 text-white/70">
                   <Phone className="w-5 h-5 text-cyan-400" />
-                  <span>+234 806 566 1350</span>
+                  <span>+234 812 556 7675</span>
                 </div>
                 <div className="flex items-center space-x-3 text-white/70">
                   <MapPin className="w-5 h-5 text-cyan-400" />
@@ -280,7 +280,7 @@ const Footer = () => {
                 viewport={{ once: true }}
                 className="text-white/60 text-sm mb-4 md:mb-0"
               >
-                © {currentYear} CodeMaster. All rights reserved.
+                © {currentYear} TechCareer. All rights reserved.
               </motion.div>
 
               <div className="flex items-center space-x-6 text-sm">

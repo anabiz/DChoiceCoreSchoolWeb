@@ -147,7 +147,7 @@ const AboutPage = () => {
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg" />
               <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                CodeMaster
+                TechCareer
               </span>
             </div>
           </div>
@@ -169,7 +169,7 @@ const AboutPage = () => {
               </span>
             </h1>
             <p className="text-xl text-white/70 leading-relaxed mb-8">
-              At CodeMaster, we&apos;re on a mission to bridge the gap between ambition and expertise. 
+              At TechCareer, we&apos;re on a mission to bridge the gap between ambition and expertise. 
               We empower aspiring technologists with the skills, knowledge, and confidence to thrive 
               in the rapidly evolving digital landscape.
             </p>
@@ -221,7 +221,7 @@ const AboutPage = () => {
               </h2>
               <div className="space-y-4 text-white/70 leading-relaxed">
                 <p>
-                  Founded in 2018, CodeMaster emerged from a simple observation: the traditional education 
+                  Founded in 2018, TechCareer emerged from a simple observation: the traditional education 
                   system was struggling to keep pace with the rapid evolution of technology. While universities 
                   were teaching fundamentals, the industry was racing ahead with new frameworks, tools, and 
                   methodologies.
@@ -365,7 +365,7 @@ const AboutPage = () => {
               </span>
             </h2>
             <p className="text-xl text-white/70 mb-8">
-              Join thousands of students who have transformed their careers with CodeMaster.
+              Join thousands of students who have transformed their careers with TechCareer.
             </p>
             <motion.button
               whileHover={{ scale: 1.05 }}

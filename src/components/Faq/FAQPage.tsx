@@ -15,8 +15,8 @@ const FAQPage = () => {
       icon: HelpCircle,
       questions: [
         {
-          question: "What is CodeMaster?",
-          answer: "CodeMaster is an online IT training platform that offers comprehensive courses and seminars in web development, data science, cloud computing, and other tech skills. We focus on practical, industry-relevant training designed to help Nigerians launch and advance their tech careers."
+          question: "What is TechCareer?",
+          answer: "TechCareer is an online IT training platform that offers comprehensive courses and seminars in web development, data science, cloud computing, and other tech skills. We focus on practical, industry-relevant training designed to help Nigerians launch and advance their tech careers."
         },
         {
           question: "Who are your courses for?",
@@ -149,7 +149,7 @@ const FAQPage = () => {
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg" />
               <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                CodeMaster
+                TechCareer
               </span>
             </div>
           </div>

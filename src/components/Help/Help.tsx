@@ -60,7 +60,7 @@ const HelpCenterPage = () => {
     {
       icon: BookOpen,
       title: "Getting Started",
-      description: "New to CodeMaster? Start here to learn the basics",
+      description: "New to TechCareer? Start here to learn the basics",
       color: "from-cyan-500 to-blue-600",
       articles: [
         "How to create your account",
@@ -214,7 +214,7 @@ const HelpCenterPage = () => {
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg" />
               <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                CodeMaster
+                TechCareer
               </span>
             </div>
             <div className="hidden md:flex items-center space-x-6">

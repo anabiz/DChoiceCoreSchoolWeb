@@ -33,7 +33,7 @@ const TermsOfServicePage = () => {
       icon: FileText,
       title: "Intellectual Property",
       content: `
-        • All course materials are proprietary to CodeMaster
+        • All course materials are proprietary to TechCareer
         • Personal use of materials for learning is permitted
         • Redistribution of content is strictly prohibited
         • You retain ownership of your projects and assignments
@@ -63,7 +63,7 @@ const TermsOfServicePage = () => {
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg" />
               <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                CodeMaster
+                TechCareer
               </span>
             </div>
           </div>
@@ -104,8 +104,8 @@ const TermsOfServicePage = () => {
               className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 p-8 mb-8"
             >
               <p className="text-white/70 leading-relaxed">
-                Welcome to CodeMaster. These Terms of Service govern your use of our platform, courses, 
-                and services. By accessing or using CodeMaster, you agree to be bound by these terms.
+                Welcome to TechCareer. These Terms of Service govern your use of our platform, courses, 
+                and services. By accessing or using TechCareer, you agree to be bound by these terms.
               </p>
             </motion.div>
 

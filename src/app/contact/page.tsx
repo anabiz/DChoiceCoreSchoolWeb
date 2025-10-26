@@ -169,7 +169,7 @@ const ContactPage = () => {
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg" />
               <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                CodeMaster
+                TechCareer
               </span>
             </div>
           </div>
@@ -457,7 +457,7 @@ const ContactPage = () => {
 
       {/* Footer */}
       <footer className="border-t border-white/10 py-8 text-center text-white/50 text-sm">
-        <p>© {new Date().getFullYear()} CodeMaster. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} TechCareer. All rights reserved.</p>
       </footer>
     </div>
   );
