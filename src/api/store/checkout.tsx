@@ -11,6 +11,7 @@ interface ICheckoutStore{
     setHydrated(): void;
     initiateCheckoutV2(request: any, isGuest: boolean): Promise<any>;
     CompleteCheckout(paymentReference: string): Promise<any>;
+    RecordPayment(request: any): Promise<any>;
 }
 
 export const useCheckoutStore = create<ICheckoutStore>()(
@@ -50,6 +51,27 @@ export const useCheckoutStore = create<ICheckoutStore>()(
                         return res.data.data;
                     }
                 } catch (error:any) {
+                    console.log(error);
+                } 
+                return null;               
+            },
+
+            async RecordPayment(request: any) {
+                try {
+                    const res = await axiosInstance.post(`/v2/Training/record`, request as any);
+                    if(res.data.success){
+                        return res.data.data;
+                    }
+                } catch (error:any) {
+                    toast.error(
+                        <ToastComponent
+                          title="Error!"
+                          body={error?.response?.data?.message || "Unable to record details"}
+                        />,
+                        {
+                          progress: undefined,
+                        }
+                    );
                     console.log(error);
                 } 
                 return null;               
