@@ -26,6 +26,7 @@ export default function RootLayout({
           {/* <Header /> */}
           {children}
           <Footer />
+          <Analytics />
           <ScrollToTop />
         </Providers>
       </body>
@@ -34,4 +35,5 @@ export default function RootLayout({
 }
 
 import { Providers } from "./providers";
+import Analytics from "@/components/Common/Analytics";
 
