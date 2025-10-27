@@ -233,7 +233,7 @@ const ClassicLandingPage = () => {
               {['Home', 'Programs', 'About', 'Contact'].map((item) => (
                 <motion.a
                   key={item}
-                  href={`#${item.toLowerCase()}`}
+                  href={`/${item.toLowerCase()}`}
                   whileHover={{ scale: 1.05 }}
                   className="text-white/70 hover:text-cyan-300 transition-colors duration-300"
                 >

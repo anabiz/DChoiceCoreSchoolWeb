@@ -9,7 +9,8 @@ import {
   Send,
   Clock,
   MessageCircle,
-  Calendar
+  Calendar,
+  Link
 } from "lucide-react";
 
 // Illumination Background Component
@@ -418,9 +419,11 @@ const ContactPage = () => {
                     </div>
                   ))}
                 </div>
-                <button className="w-full mt-4 text-cyan-400 hover:text-cyan-300 transition-colors duration-300 text-sm font-medium">
-                  View All FAQs →
-                </button>
+                  <a href="/faqs">
+                    <button className="w-full mt-4 text-cyan-400 hover:text-cyan-300 transition-colors duration-300 text-sm font-medium">
+                      View All FAQs →
+                    </button>
+                  </a>
               </div>
             </motion.div>
           </div>
@@ -441,10 +444,10 @@ const ContactPage = () => {
               <div className="text-center">
                 <MapPin className="w-16 h-16 text-cyan-400 mx-auto mb-4" />
                 <h3 className="text-2xl font-bold text-white mb-2">
-                  San Francisco Office
+                  Lagos Office
                 </h3>
                 <p className="text-white/70">
-                  123 Tech Street, San Francisco, CA 94105
+                  19 Jamia Ogwunb Street, Lagos NG, CA 94105
                 </p>
                 <button className="mt-4 text-cyan-400 hover:text-cyan-300 transition-colors duration-300 font-medium text-sm">
                   View on Google Maps →
