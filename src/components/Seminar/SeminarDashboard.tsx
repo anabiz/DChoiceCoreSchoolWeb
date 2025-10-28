@@ -1942,12 +1942,12 @@ const SeminarDashboard = () => {
 
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
                 <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
-                  From ₦50k to ₦500k: Launch Your Tech Career NOW!
+                  Your Fast-Track to a ₦500k Tech Salary
                 </span>
               </h1>
               
               <p className="text-lg text-white/70 mb-6 leading-relaxed">
-                Discover the exact roadmap Nigerian companies are using to hire tech professionals. 
+                A live seminar on the in-demand skills and proven job-search strategies to 10x your income.
                 No experience needed. 2-hour live seminar with ongoing mentorship.
               </p>
 
@@ -2079,23 +2079,21 @@ const SeminarDashboard = () => {
                     </div>
 
                     {/* Bottom Content */}
-                    <div className="mt-auto">
-                      <div className="bg-black/40 backdrop-blur-md rounded-xl p-4 border border-white/10">
-                        <h3 className="text-white font-bold text-xl mb-2">
-                          {videoConfig.title}
-                        </h3>
-                        <p className="text-white/70 text-sm mb-3">
-                          {videoConfig.description}
-                        </p>
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center space-x-2 text-white/60 text-sm">
-                            <Users className="w-4 h-4" />
-                            <span>{seminarData.studentsEnrolled}+ students watched</span>
-                          </div>
-                          <div className="flex items-center space-x-1 bg-white/20 px-2 py-1 rounded text-xs text-white">
-                            <span>Click to watch</span>
-                            <ArrowRight className="w-3 h-3" />
-                          </div>
+                    <div className="bg-black/40 backdrop-blur-md rounded-xl p-3 sm:p-4 border border-white/10">
+                      <h3 className="text-white font-bold text-lg sm:text-xl mb-2 sm:mb-2 line-clamp-2">
+                        {videoConfig.title}
+                      </h3>
+                      <p className="text-white/70 text-xs sm:text-sm mb-3 sm:mb-3 line-clamp-2">
+                        {videoConfig.description}
+                      </p>
+                      <div className="flex flex-col xs:flex-row items-start xs:items-center justify-between gap-2 xs:gap-0">
+                        <div className="flex items-center space-x-2 text-white/60 text-xs sm:text-sm">
+                          <Users className="w-4 h-4 flex-shrink-0" />
+                          <span className="whitespace-nowrap">{seminarData.studentsEnrolled}+ students watched</span>
+                        </div>
+                        <div className="flex items-center space-x-1 bg-white/20 px-3 py-1.5 sm:px-2 sm:py-1 rounded-lg sm:rounded text-xs text-white w-full xs:w-auto justify-center">
+                          <span>Click to watch</span>
+                          <ArrowRight className="w-3 h-3 flex-shrink-0" />
                         </div>
                       </div>
                     </div>
