@@ -1754,50 +1754,50 @@ const SeminarDashboard = () => {
   };
 
   const seminarData = {
-    title: "Tech Career Breakthrough: From Zero to High-Income Tech Professional",
-    description: "Discover how to launch or upgrade your tech career, even with no prior experience. Learn the exact skills Nigerian and international companies are hiring for RIGHT NOW.",
-    date: "November 01, 2025",
+    title: "Build Software with AI: From Zero to Job-Ready Without Coding",
+    description: "Discover how AI can build complete frontend and backend applications for you — even if you have never written code before. Watch live as real software is built and deployed, and learn how students and professionals in Nigeria and West Africa are using AI skills to land tech roles locally and internationally.",
+    date: "January 10, 2025",
     time: "7:00 PM WAT",
     duration: "2 Hours",
     price: 2500, // ₦2,500
     originalPrice: 5000,
-    instructor: "Tony Tech Expert",
+    instructor: "Tony — AI Software Architect",
     studentsEnrolled: 347,
     whatsappGroup: "https://chat.whatsapp.com/BiBLlIymBoiKhBs201e81o"
   };
 
-  const benefits = [
-    {
-      icon: TrendingUp,
-      title: "6-Figure Career Paths",
-      description: "Discover tech roles paying ₦500,000+ monthly in Nigeria"
-    },
-    {
-      icon: BookOpen,
-      title: "No Experience Required",
-      description: "Start from scratch with our step-by-step roadmap"
-    },
-    {
-      icon: Users,
-      title: "Mentorship Access",
-      description: "Get guidance from senior tech professionals"
-    },
-    {
-      icon: Zap,
-      title: "Immediate Opportunities",
-      description: "Learn about companies hiring RIGHT NOW"
-    }
-  ];
+const benefits = [
+  {
+    icon: TrendingUp,
+    title: "High-Income AI Tech Careers",
+    description: "Learn how people earn ₦500,000+ monthly building software with AI tools"
+  },
+  {
+    icon: BookOpen,
+    title: "No Coding Experience Needed",
+    description: "Use AI to build frontend and backend applications without learning any language"
+  },
+  {
+    icon: Users,
+    title: "Expert AI Mentorship",
+    description: "Learn directly from professionals already building real products with AI"
+  },
+  {
+    icon: Zap,
+    title: "Instant Practical Exposure",
+    description: "Watch live as AI builds, runs, and deploys real-world applications"
+  }
+];
 
-  const whatYouGet = [
-    "Live 2-hour intensive training session",
-    "Lifetime access to recording",
-    "Comprehensive tech career roadmap PDF",
-    "Mentorship support for one year",
-    "Access to exclusive WhatsApp community",
-    "List of 50+ companies hiring juniors",
-    "Resume and portfolio review guide"
-  ];
+const whatYouGet = [
+  "Live AI-powered software building seminar",
+  "Step-by-step demonstration of AI building frontend & backend",
+  "Recording access to revisit the full session",
+  "AI tools & prompts used to build real applications",
+  "Career roadmap for entering tech without coding",
+  "Access to private WhatsApp AI-tech community",
+  "Guidance on getting remote & local tech roles"
+];
 
   // Handle successful payment completion
   const handlePaymentSuccess = async () => {
@@ -1942,13 +1942,13 @@ const SeminarDashboard = () => {
 
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
                 <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
-                  Your Fast-Track to a ₦500k Tech Salary
+                  Your Fast-Track to ₦1.5M+ Monthly Building Software with AI                
                 </span>
               </h1>
               
               <p className="text-lg text-white/70 mb-6 leading-relaxed">
-                A live seminar on the in-demand skills and proven job-search strategies to 10x your income.
-                No experience needed. 2-hour live seminar with ongoing mentorship.
+                A live, hands-on seminar teaching high-demand AI skills and practical job strategies to accelerate your tech career.
+                No experience needed. 2-hour live session with continued mentorship.
               </p>
 
               <div className="flex flex-wrap gap-4 mb-6">

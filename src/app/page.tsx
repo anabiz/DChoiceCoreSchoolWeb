@@ -464,3 +464,248 @@ const ClassicLandingPage = () => {
 };
 
 export default ClassicLandingPage;
+
+
+
+
+
+
+
+// "use client";
+
+// import { useState, useEffect } from "react";
+// import Image from "next/image";
+// import Link from "next/link";
+// import { motion, AnimatePresence } from "framer-motion";
+// import { HeroWithSeminar, SeminarCTASection, WalkingTextAnnouncement } from "@/components/Common/WalkingTextAnnouncement ";
+// import { IlluminationBackground } from "@/components/Common/IlluminationBackground";
+
+
+// /* =========================
+//    PROGRAM DATA (SEMINAR)
+// ========================= */
+
+// const programsData = {
+//   upcoming: [
+//     {
+//       id: 1,
+//       title: "AI-Powered Software Creation Seminar",
+//       description:
+//         "Discover how to build complete frontend and backend applications using AI tools — without learning any programming language.",
+//       duration: "Live Practical Seminar",
+//       level: "No Coding Experience Required",
+//       seats: 50,
+//       startDate: "10 January",
+//       category: "AI Software Training",
+//       price: "Limited Seats Available",
+//       icon: "🚀"
+//     }
+//   ]
+// };
+
+// /* =========================
+//    PROGRAM CARD
+// ========================= */
+
+// const ProgramCard = ({
+//   program,
+//   index
+// }: {
+//   program: any;
+//   index: number;
+// }) => (
+//   <motion.div
+//     initial={{ opacity: 0, y: 50 }}
+//     whileInView={{ opacity: 1, y: 0 }}
+//     transition={{ duration: 0.6, delay: index * 0.1 }}
+//     viewport={{ once: true }}
+//     whileHover={{ y: -10 }}
+//     className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 p-6"
+//   >
+//     <div className="flex justify-between items-start mb-4">
+//       <div className="text-4xl">{program.icon}</div>
+//       <span className="bg-cyan-500/20 text-cyan-300 px-3 py-1 rounded-full text-xs font-semibold">
+//         {program.category}
+//       </span>
+//     </div>
+
+//     <h3 className="text-xl font-bold text-white mb-3">
+//       {program.title}
+//     </h3>
+
+//     <p className="text-white/70 mb-4">
+//       {program.description}
+//     </p>
+
+//     <div className="flex justify-between text-sm text-white/60 mb-4">
+//       <span>{program.duration}</span>
+//       <span className="text-cyan-300">{program.startDate}</span>
+//     </div>
+
+//     <Link
+//       href="/register"
+//       className="block text-center bg-gradient-to-r from-cyan-500 to-blue-600 py-3 rounded-xl font-semibold hover:from-cyan-600 hover:to-blue-700 transition"
+//     >
+//       Join the Live Seminar
+//     </Link>
+//   </motion.div>
+// );
+
+// /* =========================
+//    MAIN PAGE
+// ========================= */
+
+// const ClassicLandingPage = () => {
+//   const features = [
+//     {
+//       icon: "🤖",
+//       title: "AI Does the Coding",
+//       description:
+//         "AI understands programming languages — you learn how to instruct it to build real software."
+//     },
+//     {
+//       icon: "🎥",
+//       title: "Live Software Building",
+//       description:
+//         "Watch real applications being built live — frontend and backend — during the seminar."
+//     },
+//     {
+//       icon: "🎓",
+//       title: "Beginner & Student Friendly",
+//       description:
+//         "Ideal for undergraduates, non-tech backgrounds, and career switchers."
+//     },
+//     {
+//       icon: "🌍",
+//       title: "Work Locally & Globally",
+//       description:
+//         "Apply these skills in Nigeria, across Africa, and for remote international roles."
+//     }
+//   ];
+
+//   return (
+//     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white overflow-hidden">
+//       <IlluminationBackground />
+
+//       {/* Announcement */}
+//       <WalkingTextAnnouncement
+//       />
+
+//       {/* NAV */}
+//       <nav className="border-b border-white/10 backdrop-blur-md">
+//         <div className="container mx-auto px-6 py-4 flex justify-between">
+//           <span className="text-xl font-bold text-cyan-400">
+//             AI Software Seminar
+//           </span>
+//           <Link
+//             href="/register"
+//             className="bg-cyan-500 px-6 py-2 rounded-full font-semibold"
+//           >
+//             Register Now
+//           </Link>
+//         </div>
+//       </nav>
+
+//       {/* HERO */}
+//       <section className="min-h-screen flex items-center justify-center text-center px-6">
+//         <motion.div
+//           initial={{ opacity: 0, y: 30 }}
+//           animate={{ opacity: 1, y: 0 }}
+//           transition={{ duration: 0.8 }}
+//           className="max-w-4xl"
+//         >
+//           <h1 className="text-5xl md:text-7xl font-bold mb-6">
+//             <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+//               Build Software Using AI
+//             </span>
+//             <br />
+//             <span className="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+//               Without Writing Code
+//             </span>
+//           </h1>
+
+//           <p className="text-xl md:text-2xl text-white/70 mb-8">
+//             Learn how everyday people are building real software applications
+//             using AI — even without programming knowledge.
+//             <br />
+//             <span className="text-cyan-300 font-semibold">
+//               Live Seminar • 10 January
+//             </span>
+//           </p>
+
+//           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+//             <Link
+//               href="/register"
+//               className="bg-gradient-to-r from-cyan-500 to-blue-600 px-8 py-4 rounded-xl font-semibold text-lg"
+//             >
+//               Reserve Your Seat
+//             </Link>
+//             <Link
+//               href="#how-it-works"
+//               className="border border-white/20 px-8 py-4 rounded-xl font-semibold text-lg"
+//             >
+//               Learn How It Works
+//             </Link>
+//           </div>
+//         </motion.div>
+//       </section>
+
+//       {/* FEATURES */}
+//       <section className="py-20 px-6">
+//         <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+//           {features.map((feature, i) => (
+//             <motion.div
+//               key={i}
+//               initial={{ opacity: 0, y: 30 }}
+//               whileInView={{ opacity: 1, y: 0 }}
+//               transition={{ duration: 0.6, delay: i * 0.1 }}
+//               className="bg-white/5 p-6 rounded-2xl border border-white/10 text-center"
+//             >
+//               <div className="text-4xl mb-4">{feature.icon}</div>
+//               <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
+//               <p className="text-white/70">{feature.description}</p>
+//             </motion.div>
+//           ))}
+//         </div>
+//       </section>
+
+//       {/* PROGRAM */}
+//       <section className="py-20 px-6">
+//         <div className="container mx-auto">
+//           <h2 className="text-4xl font-bold mb-10 text-center">
+//             Upcoming Live AI Seminar
+//           </h2>
+
+//           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center">
+//             {programsData.upcoming.map((program, index) => (
+//               <ProgramCard
+//                 key={program.id}
+//                 program={program}
+//                 index={index}
+//               />
+//             ))}
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* CTA */}
+//       <section className="py-20 text-center px-6">
+//         <h2 className="text-4xl md:text-5xl font-bold mb-6">
+//           AI Has Changed the Tech Entry Barrier
+//         </h2>
+//         <p className="text-xl text-white/70 mb-8">
+//           Learn how to build software, showcase real projects, and position
+//           yourself for tech opportunities — starting January 10.
+//         </p>
+//         <Link
+//           href="/register"
+//           className="bg-gradient-to-r from-cyan-500 to-blue-600 px-10 py-4 rounded-xl font-semibold text-lg"
+//         >
+//           Join the Seminar
+//         </Link>
+//       </section>
+//     </div>
+//   );
+// };
+
+// export default ClassicLandingPage;
